@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" 
+             id="myPortletApp" version="2.0">
+	<portlet>
+		<description>Photo of the day from National Geographic</description>
+		<portlet-name>Photo of the day</portlet-name>
+		<display-name>Photo of the day</display-name>
+		<portlet-class>org.gatein.simpleportlet.PhotoViewer</portlet-class>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+            		<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<supported-locale>en</supported-locale>
+		<portlet-info>
+			<title>Photo of the day</title>
+			<short-title>Photo</short-title>
+		</portlet-info>
+		<supported-public-render-parameter>url</supported-public-render-parameter>
+	</portlet>
+	<portlet>
+		<description>Choose a website for photo of the day portlet.</description>
+		<portlet-name>Photo Changer</portlet-name>
+		<display-name>Photo Changer</display-name>
+		<portlet-class>org.gatein.simpleportlet.PhotoChanger</portlet-class>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
+			<portlet-mode>EDIT</portlet-mode>
+			<portlet-mode>HELP</portlet-mode>
+		</supports>
+		<portlet-info>
+			<title>Photo Changer</title>
+			<short-title>Photo</short-title>
+		</portlet-info>
+        	<portlet-preferences>
+            		<preference>
+                	<name>size</name>
+                	<value>50</value>
+            		</preference>
+        	</portlet-preferences>
+		<supported-public-render-parameter>url</supported-public-render-parameter>
+		
+	</portlet>
+	<public-render-parameter>
+        		<identifier>url</identifier>
+        		<qname xmlns:x="http://sun.com/params">x:url</qname>
+    		</public-render-parameter>
+</portlet-app>
