@@ -15,7 +15,6 @@
 			<portlet-mode>EDIT</portlet-mode>
             		<portlet-mode>HELP</portlet-mode>
 		</supports>
-		<supported-locale>en</supported-locale>
 		<portlet-info>
 			<title>Photo of the day</title>
 			<short-title>Photo</short-title>

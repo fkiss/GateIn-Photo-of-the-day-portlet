@@ -52,6 +52,7 @@ public class PhotoViewer extends GenericPortlet{
         
     }
     
+    @Override
     public void processAction(ActionRequest req, ActionResponse res) throws IOException, PortletException {
     
         PortletPreferences prefs = req.getPreferences();

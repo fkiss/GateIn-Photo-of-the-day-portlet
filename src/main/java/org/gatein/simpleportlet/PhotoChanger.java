@@ -5,7 +5,6 @@
 package org.gatein.simpleportlet;
 
 import java.io.IOException;
-import java.net.URL;
 import javax.portlet.*;
 
 /**
@@ -38,6 +37,7 @@ public class PhotoChanger extends GenericPortlet {
         
     }
     
+    @Override
     public void processAction(ActionRequest req, ActionResponse res)
     throws IOException, PortletException {
     
